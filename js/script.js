@@ -19,3 +19,10 @@ function copiarEmail() {
         notificacao.classList.remove("visivel");
     }, 2000);
 }
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

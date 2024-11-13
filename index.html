@@ -8,13 +8,13 @@
     <script src="./js/script.js" defer></script>
 </head>
 <body>
-
     <div class="container">
          <header>
              <h1>Eliabe Gai</h1>
              <span>Jaraguá do Sul/SC</span>
          </header>
-         <div class="section">
+
+         <div class="section" id="contato">
              <div class="contact-info">
                  <a href="https://www.linkedin.com/in/eliabe-gai-ab9a51203/" target="_blank">
                      <img src="./images/linkedin.png" alt="LinkedIn Logo"> LinkedIn
@@ -33,17 +33,18 @@
          </div>
 
         <!-- Resumo Profissional -->
-        <div class="section">
+        <div class="section resumo" id="resumo">
             <h2>Resumo Profissional</h2>
             <p>
-                Desenvolvedor web com experiência em projetos front-end e back-end, especializado na criação de aplicações escaláveis e performáticas.
-                Proativo e interessado em aprender, busco sempre trocar experiências em equipe e crescer profissionalmente. 
-                Estou em busca de oportunidades para aprimorar minhas habilidades e contribuir com soluções eficazes.
+                Desenvolvedor web com experiência em <a href="#projetos">projetos</a> front-end e back-end, especializado na criação de aplicações escaláveis e performáticas.
+                Apaixonado por aprender novas tecnologias e resolver desafios complexos, buscando oportunidades para expandir o conhecimento técnico
+                e colaborar em projetos inovadores. 
+                Forte habilidade para trabalhar em equipe, adaptando-se rapidamente a ambientes de desenvolvimento ágeis e modernos
             </p>
         </div>
 
         <!-- Experiência Profissional -->
-        <div class="section">
+        <div class="section" id="experiencia-profissional">
             <h2>Experiência Profissional</h2>
             <h3>Clinicorp Solution - Estágio Desenvolvedor Web Full Stack</h3>
             <p><em>[05/12/2022] – [05/11/2024]</em> - Jaraguá do Sul/SC</p>
@@ -56,14 +57,14 @@
         </div>
 
         <!-- Educação -->
-        <div class="section">
+        <div class="section" id="educacao">
             <h2>Educação</h2>
             <p><strong>Bacharelado em Engenharia de Software</strong><br>
-            Centro Universitário Internacional UNINTER, Jaraguá do Sul/SC – <em>02/2022 → 02/2026</em></p>
+                Centro Universitário Internacional UNINTER, Jaraguá do Sul/SC – <em>02/2022 à 02/2026.</em></p>
         </div>
 
         <!-- Habilidades Técnicas -->
-        <div class="section">
+        <div class="section" id="habilidades-tecnicas">
             <h2>Habilidades Técnicas</h2>
             <ul class="skills-list">
                 <li><strong>Linguagens:</strong> JavaScript, TypeScript, Python, SQL</li>
@@ -75,43 +76,42 @@
         </div>
 
         <!-- Projetos -->
-        <div class="projects-section">
-            <h2>Projetos</h2>
-            <div class="project-cards">
-                <!-- Card do Projeto 1 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Executável para download de músicas do YouTube</h3>
-                        <p>Projeto em Python que permite baixar músicas e playlists do YouTube e convertê-las para MP3, com salvamento automático dos arquivos em uma pasta específica. Automatiza o processo de download e conversão, utilizando bibliotecas como  pytube, proporcionando uma experiência rápida e eficiente.</p>
-                        <a href="https://github.com/Eliabegai/download-audio" target="_blank">Link para o projeto</a>
-                    </div>
-                    <img src="./images/download-audio.png" alt="Tela principal Download de Audio" class="project-image" >
-                </div>
+         <div class="section" id="projetos">
+             <h2>Projetos</h2>
+                 <div class="project-cards">
 
-                <!-- Card do Projeto 2 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Biblioteca de Leitura Digital</h3>
-                        <p>Biblioteca online desenvolvida para gerenciar o histórico de leitura de web novels, mangás e similares. Utilizando Next.js, ShadCN e Tailwind no frontend, o sistema permite que usuários cadastrados salvem e organizem suas leituras, registrando o nome da obra, capítulo atual, link direto e imagem de capa para fácil identificação.</p>
-                        <a href="https://github.com/Eliabegai/biblioteca" target="_blank">Link para o projeto</a>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Executável para download de músicas do YouTube</h3>
+                            <p>Projeto em Python que permite baixar músicas e playlists do YouTube e convertê-las para MP3, com salvamento automático dos arquivos em uma pasta específica. Automatiza o processo de download e conversão, utilizando bibliotecas como  pytube, proporcionando uma experiência rápida e eficiente.</p>
+                            <a href="https://github.com/Eliabegai/download-audio" target="_blank">Link para o projeto</a>
+                        </div>
+                        <img src="./images/download-audio2.png" alt="Tela principal Download de Audio" class="project-image" >
                     </div>
-                    <img src="./images/biblioteca.png" alt="Biblioteca de Leitura" class="project-image" >
-                </div>
+    
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Biblioteca de Leitura Digital</h3>
+                            <p>Biblioteca online desenvolvida para gerenciar o histórico de leitura de web novels, mangás e similares. Utilizando Next.js, ShadCN e Tailwind no frontend, o sistema permite que usuários cadastrados salvem e organizem suas leituras, registrando o nome da obra, capítulo atual, link direto e imagem de capa para fácil identificação.</p>
+                            <a href="https://github.com/Eliabegai/biblioteca" target="_blank">Link para o projeto</a>
+                        </div>
+                        <img src="./images/biblioteca.png" alt="Biblioteca de Leitura" class="project-image" >
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Backend Biblioteca de Leitura Digital</h3>
+                            <p>No backend da Biblioteca de Leitura Digital, foi utilizado NestJS para criar uma API estruturada e escalável, com Prisma como ORM para gerenciar o banco de dados. A persistência dos dados foi configurada com Docker, permitindo uma instância de banco de dados local, garantindo desenvolvimento e testes mais ágeis e isolados. A API oferece endpoints seguros para autenticação de usuários, cadastro e consulta de históricos de leitura, mantendo os dados sincronizados com o frontend e prontos para consultas rápidas.</p>
+                            <a href="https://github.com/Eliabegai/backend-biblioteca" target="_blank">Link para o projeto</a>
+                        </div>
+                        <img src="" alt="Backend Biblioteca" class="project-image inativo" >
+                    </div>
 
-                <!-- Card do Projeto 3 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Backend Biblioteca de Leitura Digital</h3>
-                        <p>No backend da Biblioteca de Leitura Digital, foi utilizado NestJS para criar uma API estruturada e escalável, com Prisma como ORM para gerenciar o banco de dados. A persistência dos dados foi configurada com Docker, permitindo uma instância de banco de dados local, garantindo desenvolvimento e testes mais ágeis e isolados. A API oferece endpoints seguros para autenticação de usuários, cadastro e consulta de históricos de leitura, mantendo os dados sincronizados com o frontend e prontos para consultas rápidas.</p>
-                        <a href="https://github.com/Eliabegai/backend-biblioteca" target="_blank">Link para o projeto</a>
-                    </div>
-                    <img src="" alt="Backend Biblioteca" class="project-image inativo" >
-                </div>
-            </div>
-        </div>
+             </div>
+         </div>
 
         <!-- Idiomas -->
-        <div class="section">
+        <div class="section" id="idiomas">
             <h2>Idiomas</h2>
             <div class="idiomas">
                 <span>Português – Nativo</span>
@@ -120,12 +120,15 @@
         </div>
 
         <!-- Resumo Profissional -->
-        <div class="section">
+        <div class="section" id="resumo-profissional">
             <h2>Resumo Profissional</h2>
             <p>
                 Desenvolvedor Web Júnior com conhecimentos em tecnologias como Next.js, NestJS, Docker e Prisma. Possuo experiência em projetos de frontend e backend, além de habilidades em automação de processos e organização de dados. Apaixonado por aprender, sou proativo e valorizo o trabalho em equipe, sempre buscando trocar experiências e crescer profissionalmente. Estou em busca de oportunidades para aprimorar minhas habilidades técnicas e contribuir com soluções eficazes, alinhando meu desenvolvimento ao crescimento da empresa.
             </p>
         </div>
+    </div>
+    <div>
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
     </div>
 
     <footer>
